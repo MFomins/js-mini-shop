@@ -67,7 +67,7 @@ class ShoppingCart extends Component {
         this.orderProducts = () => {
             console.log("Ordering...");
             console.log(this.items);
-        }
+        };
         this.render();
     }
 
@@ -185,3 +185,29 @@ class App {
 }
 
 App.init();
+
+// ----- Instanceof operator - console log example -----
+
+// class Person {
+//     name = 'Mark';
+// }
+// const p = new Person();
+
+// p
+
+// typeof p
+
+// p instanceof Person // ---checks if value is stored and gives true of false result
+
+// ----- Object descriptors ------
+
+// const person = {name: 'Mark', greet() {console.log(this.name);}}
+
+// Object.getOwnPropertyDescriptors(person)
+
+// Object.defineProperty(person, 'name', {
+//     configurable: true,
+//     enumerable: true,
+//     value: person.name,
+//     writable: false
+// });
